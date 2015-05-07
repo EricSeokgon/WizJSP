@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WizJSP.iml" filepath="$PROJECT_DIR$/WizJSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wizjsp_7_1_form/wizjsp_7_1_form.iml" filepath="$PROJECT_DIR$/wizjsp_7_1_form/wizjsp_7_1_form.iml" />
     </modules>
   </component>
 </project>
