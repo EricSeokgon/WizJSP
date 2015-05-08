@@ -14,12 +14,12 @@ import java.io.PrintWriter;
  * Project: WizJSP
  * FileName: ${NAME}
  * Date: 2015-05-08
- * Time: ø¿¿¸ 10:14
+ * Time: Ïò§Ï†Ñ 10:14
  * Author: Hadeslee
  * Note:
  * To change this template use File | Settings | File Templates.
  */
-@WebServlet(urlPatterns = {"/InitP"}, initParams = {@WebInitParam(name = "id", value = "aaaa"), @WebInitParam(name = "pw", value = "99999"),@WebInitParam(name = "path", value = "C:\\Users\\sklee\\IdeaProjects")})
+@WebServlet(name = "InitParam", urlPatterns = {"/InitP"}, initParams = {@WebInitParam(name = "id", value = "aaaa"), @WebInitParam(name = "pw", value = "99999"), @WebInitParam(name = "path", value = "C:\\Users\\sklee\\IdeaProjects")})
 
 public class InitParam extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -33,6 +33,7 @@ public class InitParam extends HttpServlet {
         String pw = getInitParameter("pw");
         String path = getInitParameter("path");
 
+        System.out.println("InitParam Web.xml";
         System.out.println("id = " + id);
         System.out.println("pw = " + pw);
         System.out.println("path = " + path);
@@ -41,10 +42,11 @@ public class InitParam extends HttpServlet {
         /*response.setContentType("text/html; charset=EUC-KR");
         PrintWriter writer = response.getWriter();
 
-        writer.println("<html><head></head><body>");
-        writer.println("æ∆¿Ãµ:" + id + "<br/>");
-        writer.println("∫Òπ–π¯»£:" + pw + "<br/>");
-        writer.println("∞Ê∑Œ:" + path + "");
+       writer.println("<html><head></head><body>");
+        writer.println("ServletInitParam<br/>");
+        writer.println("ÏïÑÏù¥Îîî:" + id + "<br/>");
+        writer.println("ÎπÑÎ∞ÄÎ≤àÌò∏:" + pw + "<br/>");
+        writer.println("Í≤ΩÎ°ú:" + path + "");
         writer.println("</body></html>");
 
         writer.close();*/

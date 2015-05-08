@@ -51,5 +51,18 @@
         <url-pattern>/IP</url-pattern>
     </servlet-mapping>
 
+    <context-param>
+        <param-name>id</param-name>
+        <param-value>abcdef</param-value>
+    </context-param>
+    <context-param>
+        <param-name>pw</param-name>
+        <param-value>1234</param-value>
+    </context-param>
+    <context-param>
+        <param-name>path</param-name>
+        <param-value>C:\\Users\\sklee\\IdeaProjects</param-value>
+    </context-param>
+
 
 </web-app>

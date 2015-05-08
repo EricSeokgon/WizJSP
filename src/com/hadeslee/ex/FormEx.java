@@ -16,7 +16,7 @@ import java.util.Arrays;
  * Time: 오전 1:27
  * To change this template use File | Settings | File Templates.
  */
-@WebServlet("/FormEx")
+@WebServlet(name="FormEx", urlPatterns="/FormEx")
 public class FormEx extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("doPost");
