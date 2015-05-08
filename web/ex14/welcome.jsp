@@ -1,9 +1,9 @@
 <%@ page import="java.util.Enumeration" %>
 <%--
   Project: WizJSP
-  FileName: sessiontest  
+  FileName: welcome  
   Date: 2015-05-08
-  Time: 오후 4:56
+  Time: 오후 4:23
   Author: Hadeslee 
   To change this template use File | Settings | File Templates.
 --%>
@@ -11,20 +11,22 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>sessiontest</title>
+    <title>welcome</title>
 </head>
 <body>
 <%
     Enumeration enumeration = session.getAttributeNames();
     int i = 0;
     while (enumeration.hasMoreElements()) {
-        i++;
         String sName = enumeration.nextElement().toString();
         String sValue = (String) session.getAttribute(sName);
-        out.println("sName : " + sName + "<br/>");
-        out.println("sValue : " + sValue + "<br/>");
+
+        if (sValue.equals("abcde")) {
+            out.println(sValue + "님 안녕하세요.<br/>");
+        }
     }
-    if (i == 0) out.println("해당 세션이 삭제 되었습니다.");
 %>
-</body>
+<a href="sessiontest.jsp">sessionTest</a>
+<a href="logout.jsp">로그아웃</a>
+</body
 </html>
