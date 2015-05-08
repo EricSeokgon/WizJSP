@@ -17,7 +17,7 @@
         </init-param>
         <init-param>
             <param-name>path</param-name>
-            <param-value>C:\\Users\sklee\\IdeaProjects</param-value>
+            <param-value>C:\\Users\\sklee\\IdeaProjects</param-value>
         </init-param>
 
     </servlet>
@@ -36,7 +36,7 @@
         </init-param>
         <init-param>
             <param-name>path</param-name>
-            <param-value>C:\\Users\sklee\\IdeaProjects</param-value>
+            <param-value>C:\\Users\\sklee\\IdeaProjects</param-value>
         </init-param>
 
     </servlet>
