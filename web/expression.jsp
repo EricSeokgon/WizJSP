@@ -1,3 +1,4 @@
+<%@ page import="java.util.Arrays" %>
 <%--
   Project: WizJSP
   FileName: expression  
@@ -23,7 +24,11 @@
 
 <%= i %><br/>
 <%= str %><br/>
-<%= sum(1, 5)%>
+<%= sum(1, 5)%><br/>
 
+<%
+    int[] iArr = {10, 20, 30};
+    out.println(Arrays.toString(iArr));
+%>
 </body>
 </html>
