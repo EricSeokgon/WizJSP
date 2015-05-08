@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <html>
 <head>
-    <title>request 요청 예제</title>
+    <title>request 객체 예제</title>
 </head>
 <body>
 <%
