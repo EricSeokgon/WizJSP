@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <html>
 <head>
-    <title>지시자 예제</title>
+    <title>지시자 include 예제</title>
 </head>
 <body>
 <h1> include.jsp 페이지 입니다. </h1>
