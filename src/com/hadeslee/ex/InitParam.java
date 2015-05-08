@@ -33,7 +33,7 @@ public class InitParam extends HttpServlet {
         String pw = getInitParameter("pw");
         String path = getInitParameter("path");
 
-        System.out.println("InitParam Web.xml";
+        System.out.println("InitParam Web.xml");
         System.out.println("id = " + id);
         System.out.println("pw = " + pw);
         System.out.println("path = " + path);

@@ -63,6 +63,10 @@
         <param-name>path</param-name>
         <param-value>C:\\Users\\sklee\\IdeaProjects</param-value>
     </context-param>
+    
+    <listener>
+        <listener-class>com.hadeslee.ex.ContextListenerEx</listener-class>
+    </listener>
 
 
 </web-app>
