@@ -76,7 +76,7 @@ public class JoinOk extends HttpServlet {
 
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            connection = DriverManager.getConnection("jdbc:oracle:thin:@iccs.mooo.com:1521:orcl" , "scott" , "tiger");
+            connection = DriverManager.getConnection("jdbc:oracle:thin:@//iccs.mooo.com:1521/orcl" , "scott" , "tiger");
             stmt = connection.createStatement();
             int i = stmt.executeUpdate(query);
             if(i == 1){
