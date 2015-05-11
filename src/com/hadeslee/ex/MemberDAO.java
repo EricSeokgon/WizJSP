@@ -6,16 +6,29 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
 public class MemberDAO {
 
-	private String url = "jdbc:oracle:thin:@iccs.mooo.com:1521:orcl";
-	private String uid = "scott";
-	private String upw = "tiger";
+//	private String url = "jdbc:oracle:thin:@localhost:1521:xe";
+//	private String uid = "scott";
+//	private String upw = "tiger";
 	
+	private DataSource dataSource;
 	
 	public MemberDAO() {
+		
+//		try {
+//			Class.forName("oracle.jdbc.driver.OracleDriver");
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+		
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Context context = new InitialContext();
+			dataSource = (DataSource)context.lookup("java:comp/env/jdbc/Oracle11g");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -30,7 +43,8 @@ public class MemberDAO {
 		ResultSet rs = null;
 		
 		try {
-			con = DriverManager.getConnection(url, uid, upw);
+//			con = DriverManager.getConnection(url, uid, upw);
+			con = dataSource.getConnection();
 			stmt = con.createStatement();
 			rs = stmt.executeQuery("select * from member");
 			
