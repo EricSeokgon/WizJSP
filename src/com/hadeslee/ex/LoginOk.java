@@ -57,7 +57,7 @@ public class LoginOk extends HttpServlet {
 
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            connection = DriverManager.getConnection("jdbc:oracle:thin:@iccs.mooo.com:1521:orcl" , "scott" , "tiger");
+            connection = DriverManager.getConnection("jdbc:oracle:thin:@//iccs.mooo.com:1521/orcl" , "scott" , "tiger");
             stmt = connection.createStatement();
             resultSet =  stmt.executeQuery(query);
 

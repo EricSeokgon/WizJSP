@@ -18,7 +18,7 @@
     ResultSet resultSet;
 
     String driver = "oracle.jdbc.driver.OracleDriver";
-    String url = "jdbc:oracle:thin:@iccs.mooo.com:1521:orcl";
+    String url = "jdbc:oracle:thin:@//iccs.mooo.com:1521/orcl";
     String uid = "scott";
     String upw = "tiger";
     String query = "select * from member";
@@ -39,9 +39,9 @@
             String id = resultSet.getString("id");
             String pw = resultSet.getString("pw");
             String name = resultSet.getString("name");
-            String phone = resultSet.getString("phone");
+            String phone1 = resultSet.getString("phone1");
 
-            out.println("아이디 : " + id + ", 비밀번호 : " + pw + ", 이름 : " + name + ", 전화번호 : " + phone + "<br />");
+            out.println("아이디 : " + id + ", 비밀번호 : " + pw + ", 이름 : " + name + ", 전화번호 : " + phone1 + "<br />");
         }
     } catch (Exception e) {
     } finally {
