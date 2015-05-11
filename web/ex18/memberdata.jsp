@@ -18,7 +18,7 @@
     ResultSet resultSet;
 
     String driver = "oracle.jdbc.driver.OracleDriver";
-    String url = "jdbc:oracle:thin:@//iccs.mooo.com:1521/orcl";
+    String url = "jdbc:oracle:thin:@iccs.mooo.com:1521:orcl";
     String uid = "scott";
     String upw = "tiger";
     String query = "select * from member";
