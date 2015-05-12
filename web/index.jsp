@@ -7,10 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title></title>
-  </head>
-  <body>
-  Hello World!!!안녕하세요!!!
-  </body>
+</head>
+<body>
+  Wiz Jsp 강좌
+</body>
 </html>
