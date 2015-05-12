@@ -11,6 +11,8 @@
       <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
       <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/cos.jar!/" />
+      <root url="jar://D:/다운로드/1.down/jakarta-taglibs-standard-1.1.2/lib/jstl.jar!/" />
+      <root url="jar://D:/다운로드/1.down/jakarta-taglibs-standard-1.1.2/lib/standard.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
